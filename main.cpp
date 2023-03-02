@@ -8,29 +8,17 @@
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-	void cabecalho(){
-		for(int i=0;i<54;i++){
-		cout << "*"; 
-	}
-	
-	cout << "Calculadora";
-	
-	for(int i=0;i<55;i++){
-		cout << "*"; 
-	}	
-	}
-	
 	void display(){
-	cout << left << setfill('>') << setw(20) << "\n1=" << right << setfill('>') << setw(20) << " Soma" << endl;
-	cout << left << setfill('>') << setw(20) << "2=" << right << setfill('>') << setw(20) << " Subtracao" << endl;
-	cout << left << setfill('>') << setw(20) << "3=" << right << setfill('>') << setw(20) << " Multiplicacao" << endl;
-	cout << left << setfill('>') << setw(20) << "4=" << right << setfill('>') << setw(20) << " Divisao" << endl;
-	cout << left << setfill('>') << setw(20) << "5=" << right << setfill('>') << setw(20) << " Potencia" << endl;
-	cout << left << setfill('>') << setw(20) << "6=" << right << setfill('>') << setw(20) << " Raiz quadrada" << endl;
-	cout << left << setfill('>') << setw(20) << "7=" << right << setfill('>') << setw(20) << " Testador de numero Par" << endl;
-	cout << left << setfill('>') << setw(20) << "8=" << right << setfill('>') << setw(20) << " Testador de numero Impar" << endl;
-	cout << left << setfill('>') << setw(20) << "9=" << right << setfill('>') << setw(20) << " Testador de numero Primo" << endl;
-	cout << left << setfill('>') << setw(20) << "\n0=" << right << setfill('>') << setw(20) << " Limpar tela" << endl;
+	cout << left << setfill('>') << setw(6) << "\n1= " << right << setfill(' ') << setw(1) << " Soma" << endl;
+	cout << left << setfill('>') << setw(5) << "2= " << right << setfill('>') << setw(1) << " Subtracao" << endl;
+	cout << left << setfill('>') << setw(5) << "3= " << right << setfill('>') << setw(1) << " Multiplicacao" << endl;
+	cout << left << setfill('>') << setw(5) << "4= " << right << setfill('>') << setw(1) << " Divisao" << endl;
+	cout << left << setfill('>') << setw(5) << "5= " << right << setfill('>') << setw(1) << " Potencia" << endl;
+	cout << left << setfill('>') << setw(5) << "6= " << right << setfill('>') << setw(1) << " Raiz quadrada" << endl;
+	cout << left << setfill('>') << setw(5) << "7= " << right << setfill('>') << setw(1) << " Testador de numero Par" << endl;
+	cout << left << setfill('>') << setw(5) << "8= " << right << setfill('>') << setw(1) << " Testador de numero Impar" << endl;
+	cout << left << setfill('>') << setw(5) << "9= " << right << setfill('>') << setw(1) << " Testador de numero Primo" << endl;
+	cout << left << setfill('>') << setw(8) << "\n0= " << right << setfill('>') << setw(1) << " Limpar tela" << endl;
 	cout << endl;
 	cout << "< ";
 	}
@@ -38,7 +26,7 @@ using namespace std;
 int menu(){
 	
 	
-	cabecalho();
+	cout << "\nCalculadora!" << endl;
 	display();
 	
 	int op;
